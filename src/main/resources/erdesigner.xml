@@ -59,6 +59,10 @@
             <Text lang="de">als PNG</Text>
             <Text lang="en">as PNG</Text>
         </Entry>
+        <Entry id="ASPDF">
+            <Text lang="de">als PDF</Text>
+            <Text lang="en">as PDF</Text>
+        </Entry>
         <Entry id="ASJPEG">
             <Text lang="de">als JPEG</Text>
             <Text lang="en">as JPEG</Text>

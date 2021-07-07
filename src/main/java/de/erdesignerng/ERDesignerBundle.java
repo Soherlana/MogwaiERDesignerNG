@@ -63,6 +63,9 @@ public interface ERDesignerBundle {
 	/** \u0061\u0073\u0020\u0050\u004e\u0047. */
 	String ASPNG = "ASPNG";
 
+	/** \u0061\u0073\u0020\u0050\u0044\u0046. */
+	String ASPDF = "ASPDF";
+
 	/** \u0061\u0073\u0020\u004a\u0050\u0045\u0047. */
 	String ASJPEG = "ASJPEG";
 

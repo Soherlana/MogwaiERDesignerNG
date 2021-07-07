@@ -39,6 +39,7 @@ import de.erdesignerng.visual.jgraph.cells.views.RelationEdgeView;
 import de.erdesignerng.visual.jgraph.cells.views.TableCellView;
 import de.erdesignerng.visual.jgraph.export.Exporter;
 import de.erdesignerng.visual.jgraph.export.ImageExporter;
+import de.erdesignerng.visual.jgraph.export.PDFExporter;
 import de.erdesignerng.visual.jgraph.export.SVGExporter;
 import de.erdesignerng.visual.jgraph.plaf.basic.ERDesignerGraphUI;
 import de.erdesignerng.visual.jgraph.tools.*;
@@ -843,6 +844,13 @@ public class JGraphEditor extends DefaultScrollPane implements GenericModelEdito
             aExportMenu.add(theSingleExportMenu);
 
             addExportEntries(theSingleExportMenu, new ImageExporter("png"));
+        }
+        if (theSupportedFormats.contains("IMAGE/PNG")) {
+            DefaultMenu theSingleExportMenu = new DefaultMenu(aProvider,
+                    ERDesignerBundle.ASPDF);
+            aExportMenu.add(theSingleExportMenu);
+
+            addExportEntries(theSingleExportMenu, new PDFExporter());
         }
         if (theSupportedFormats.contains("IMAGE/JPEG")) {
             DefaultMenu theSingleExportMenu = new DefaultMenu(aProvider,
